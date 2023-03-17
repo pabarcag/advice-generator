@@ -1,0 +1,99 @@
+:root{
+    --text-color: hsl(193, 38%, 86%);
+    --icon-color: hsl(150, 100%, 66%);
+    --id-color: hsla(150, 100%, 66%, 0.5);
+    --bg-color: hsl(218, 23%, 16%);
+    --bg-md-dark: hsl(217, 19%, 24%);
+    --bg-card: hsl(217, 19%, 38%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    font-family: sans-serif;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    padding-bottom: 5em;
+    width: 90%;
+    max-width: 500px;
+    min-width: 360px;
+    border-radius: 15px;
+    gap: 3em;
+    background-color: var(--bg-md-dark);
+    position: relative;
+}
+
+.card__texts{
+    flex-direction: column;
+    display: flex;
+    gap: 2em;
+    text-align: center;
+}
+
+
+.card__id{
+    color: var(--icon-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.card__advice{
+    color: var(--text-color);
+    font-size: 1.3rem;
+    line-height: 1.5;
+    max-width: 350px;
+}
+
+
+.card__pattern{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.card__button{
+    position: absolute;
+    bottom: -25px;
+    border: none;
+    padding: 1.5em;
+    border-radius: 50%;
+
+    background-color: var(--icon-color);
+}
+
+
+
+.card__button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 20px 8px var(--id-color);
+    transform: translateY(-1px);
+}
+
+
+
+a{
+    color: var(--id-color);
+}
+
